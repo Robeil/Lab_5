@@ -1,4 +1,4 @@
-package CS203Course.Lab_5;
+package Lab_5;
 
 public abstract class Animal { //Animal is the abstract class
 

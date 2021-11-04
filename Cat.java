@@ -1,4 +1,4 @@
-package CS203Course.Lab_5;
+package Lab_5;
 
 public class Cat extends Animal { //this is cat  concrete class
 

@@ -1,4 +1,4 @@
-package CS203Course.Lab_5;
+package Lab_5;
 
 public interface Mammal { //fixme => Mammal is the super interface
     // example down-casting and up-casting
