@@ -1,4 +1,4 @@
-package Lab_5;
+package CS203Course.Lab_5;
 
 public class MammalTest {
 

@@ -1,6 +1,6 @@
-package Lab_5.Question_4;
+package CS203Course.Lab_5.Question_4;
 
-public class Employee implements Comparable<Employee>{
+public class Employee implements Comparable<Employee> {
 
     private int employeeId;
     private String name;
@@ -9,6 +9,7 @@ public class Employee implements Comparable<Employee>{
     private String position;
 
     public Employee(int employeeId, String name, String department, double salary, String position) {
+        super();
         this.employeeId = employeeId;
         this.name = name;
         this.department = department;
@@ -56,21 +57,29 @@ public class Employee implements Comparable<Employee>{
         this.position = position;
     }
 
-    public double addBonus(){
+    public double addBonus() {
         return this.salary + 200;
     }
 
-    public void printEmployeeDetails(){
+    public void printEmployeeDetails() {
         System.out.println("\nName: " + name
-        + ", department: " + department
-        + ", employee ID: " + employeeId
-        + ", salary and bonus: "+ addBonus()
+                + ", department: " + department
+                + ", employee ID: " + employeeId
+                + ", salary and bonus: " + addBonus()
         );
     }
 
     @Override
     public int compareTo(Employee o) { //fixme ==> implement HERE
-        if(!(o instanceof Employee)) return -1;
+        if (!(o instanceof Employee)) return -1;
         return position.compareTo(o.position);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (!(obj instanceof Employee)) return false;
+        Employee e = (Employee) obj;
+        return position.equals(e.position);
     }
 }

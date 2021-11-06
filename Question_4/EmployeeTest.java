@@ -1,4 +1,4 @@
-package Lab_5.Question_4;
+package CS203Course.Lab_5.Question_4;
 
 public class EmployeeTest {
 
@@ -13,6 +13,14 @@ public class EmployeeTest {
         emp2.printEmployeeDetails();
         emp3.printEmployeeDetails();
         emp4.printEmployeeDetails();
+
+        System.out.println("This should be false " +emp1.equals(emp2));
+        System.out.println("This should be false " +emp1.equals(emp3));
+        System.out.println("This should be true " +emp1.equals(emp1));
+
+        Employee clerk = new Clerk(01,"New Clerk","stoking",23,"front");
+
+        clerk.printEmployeeDetails();
 
     }
 }

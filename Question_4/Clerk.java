@@ -1,4 +1,4 @@
-package Lab_5.Question_4;
+package CS203Course.Lab_5.Question_4;
 
 public class Clerk extends Employee{
 
@@ -8,6 +8,6 @@ public class Clerk extends Employee{
 
     @Override
     public double addBonus() {
-        return super.addBonus() + 100;
+        return super.getSalary() + 100;
     }
 }
